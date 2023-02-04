@@ -1,4 +1,5 @@
-import { createBrowserRouter, createRoutesFromElements, Link, Outlet, Route } from 'react-router-dom';
+import { createBrowserRouter, createRoutesFromElements, Outlet, Route } from 'react-router-dom';
+import Template from '../layout/Template';
 import Increase from '../pages/Increase';
 import Todos from '../pages/Todos';
 
@@ -17,13 +18,15 @@ const Router = () => {
 
 const Root = () => {
     return <>
-        <div>
+        <Template>
+            <Outlet />
+        </Template>
+        {/* <div>
             <Link to='/'>Increase</Link> |
             <Link to='/todos'>Todos</Link>
         </div>
         <div>
-            <Outlet />
-        </div>
+        </div> */}
     </>
 }
 

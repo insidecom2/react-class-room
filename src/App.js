@@ -1,6 +1,3 @@
-// import logo from './logo.svg';
-// import './App.css';
-import { useEffect, useState } from 'react';
 import { RouterProvider } from 'react-router-dom';
 import Router from './routes/Router';
 
