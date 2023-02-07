@@ -21,12 +21,7 @@ const Root = () => {
         <Template>
             <Outlet />
         </Template>
-        {/* <div>
-            <Link to='/'>Increase</Link> |
-            <Link to='/todos'>Todos</Link>
-        </div>
-        <div>
-        </div> */}
+
     </>
 }
 
