@@ -1,8 +1,14 @@
-const Table = () => {
+import Title from "antd/es/typography/Title";
+import TableComponent from '@components/Table/Table';
+import useFetchTable from '@hooks/useFetchTable';
+
+const TablePage = () => {
+    const { tableData } = useFetchTable();
 
     return <>
-        <h1>Table</h1>
+        <Title>Table</Title>
+        <TableComponent data={tableData} />
     </>
 }
 
-export default Table;
+export default TablePage;
