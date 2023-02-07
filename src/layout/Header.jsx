@@ -15,6 +15,11 @@ const HeaderTemplate = () => {
             key: 'todo',
             icon: <AppstoreOutlined />,
         },
+        {
+            label: <Link to='/table'>Table</Link>,
+            key: 'table',
+            icon: <AppstoreOutlined />,
+        },
     ];
     return <>
         <Header>
