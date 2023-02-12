@@ -30,6 +30,7 @@ const AddTodoList = (props) => {
             <Form.Item
                 label="Content"
                 name="content"
+                id="todo-item"
                 rules={[{ required: true, message: 'Please input your content!' }]}
             >
                 <Input />

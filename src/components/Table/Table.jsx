@@ -1,6 +1,5 @@
-import { Table } from 'antd';
+import { Table, Skeleton } from 'antd';
 import { useState } from 'react';
-
 const columns = [
     {
         title: 'Name',
@@ -48,7 +47,13 @@ const TableComponent = (props) => {
     }
 
     const loading = data.length > 0 ? false : true;
-
+    if (loading) {
+        return <>
+            <Skeleton active />
+            <Skeleton active />
+            <Skeleton active />
+        </>
+    }
     return <>
         <Table
             columns={columns}
