@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import TodoLists from '../TodoLists';
 
 it('Todo List', () => {
@@ -22,3 +22,5 @@ it('Todo List', () => {
     expect(element).toHaveTextContent('test-3')
     expect(element).toHaveTextContent('delete')
 })
+
+
